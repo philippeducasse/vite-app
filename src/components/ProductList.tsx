@@ -13,7 +13,7 @@ const ProductList = ({addToCart, products}: ProductListProps) => {
           // use parentheses here because it is used as the logical operator.
           //IF data && ("This Stuff")
           <ul>
-            {products!.map(
+            {products.map(
               (
                 product // using the parenthesis here treats the value as one element,
               ) => (

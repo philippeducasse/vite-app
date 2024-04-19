@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import ProductList from "./components/ProductList";
-import { Data } from "./Types";
+import { Data, Product, User } from "./Types";
 
 function App() {
 
-  const [products, setProducts] = useState<Data | null>(null);
-  const [users, setUsers] = useState<Data | null>(null);
-  const [counter, setCounter] = useState<number>(0);
+  const [products, setProducts] = useState<Product[] | null>(null);
+  const [users, setUsers] = useState<User[] | null>(null);
+  const [counter, setCounter] = useState(0);
 
   const fetchProducts = () => {
     return new Promise((resolve, reject) => {

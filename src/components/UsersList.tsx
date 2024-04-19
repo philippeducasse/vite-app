@@ -1,9 +1,8 @@
-// import React from 'react'
 
-// const UsersList = () => {
-//   return (
+const UsersList = () => {
+  return (
     
-//   )
-// }
+  )
+}
 
-// export default UsersList
+export default UsersList
